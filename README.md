@@ -64,7 +64,7 @@ AI is optional. If you use it, start with [explore](prompts/explore.md), then [p
 
 ## Submit to Showcase
 
-After your portfolio works, [submit your live Pages URL and GitHub username](https://github.com/ssuish/msc-developer-workspace/issues/new?template=showcase.yml). Sign in to GitHub and check the public showcase consent box. A GitHub Action checks that your account, username, and Pages URL match, then adds your link automatically. See the [showcase guide](showcase/README.md).
+After your portfolio works, [submit it in the Developer Showcase](https://msc-developer-workspace.quidor-adrean.chatgpt.site/showcase?submit=1). Enter your GitHub username and live GitHub Pages URL, then agree to show them publicly. Your portfolio appears automatically after the form checks the link. See the [showcase guide](showcase/README.md).
 
 ## Resources
 
