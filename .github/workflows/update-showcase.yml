@@ -1,0 +1,48 @@
+name: Update showcase
+
+on:
+  issues:
+    types: [opened, edited, closed, reopened, deleted, labeled, unlabeled]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+  actions: write
+
+concurrency:
+  group: showcase-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.repository == 'ssuish/msc-developer-workspace'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Build showcase feed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh api --paginate --slurp "repos/$GH_REPO/issues?state=open&labels=showcase-submission&per_page=100" > "$RUNNER_TEMP/showcase-issues.json"
+          if [ ! -s "$RUNNER_TEMP/showcase-issues.json" ]; then echo "[]" > "$RUNNER_TEMP/showcase-issues.json"; fi
+          node scripts/build-showcase.mjs "$RUNNER_TEMP/showcase-issues.json" starter/showcase.json
+      - name: Publish feed source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if git diff --quiet -- starter/showcase.json; then
+            echo "Showcase is already current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add starter/showcase.json
+          git commit -m "Update developer showcase"
+          git push origin HEAD:main
+          gh workflow run deploy-portfolio.yml --ref main

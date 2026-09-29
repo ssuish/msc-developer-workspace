@@ -1,9 +1,9 @@
 # MSC Developer Showcase
 
-After your portfolio is live, submit it using the workshop Google Form. The form link will be added before the event.
+After your portfolio is live, [open the showcase submission form](https://github.com/ssuish/msc-developer-workspace/issues/new?template=showcase.yml). You need a GitHub account to submit.
 
-The form asks for your display name, GitHub username, repository URL, deployed URL, short description, and explicit consent to appear publicly. You can decline public showcase consent; submitting does not guarantee a feature.
+Enter your GitHub username and your live GitHub Pages URL, then check the required public showcase consent box. Your submission is a **public GitHub issue**, so do not include private information. The showcase displays your username and portfolio link.
 
-Each entry is reviewed manually. Only approved, working portfolios from people who consented will be added to the public presentation site. Do not include private contact information in the description.
+The workflow checks that the issue author matches the username and that the URL uses that account's username.github.io host. Valid open submissions appear automatically after the workflow and Pages deployment finish. This checks the link format and identity; it does not review the portfolio's content. A Pages owner can change the content later.
 
-For organizers: keep form responses private, verify the repository and live URL, confirm consent, and add approved entries to the presentation site's static showcase data. Remove an entry if its owner withdraws consent.
+To withdraw your submission, close your issue. The workflow will remove it from the showcase feed. Repository maintainers can also close issues to remove spam or harmful links. If your entry does not appear, confirm the issue is open, your username matches your GitHub account, the URL starts with https://YOUR_USERNAME.github.io/, and the showcase workflow completed.

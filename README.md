@@ -64,7 +64,7 @@ AI is optional. If you use it, start with [explore](prompts/explore.md), then [p
 
 ## Submit to Showcase
 
-After your portfolio works, follow the [showcase guide](showcase/README.md). Submissions go through a private Google Form. Only approved entries with explicit consent appear in the public showcase. The form link will be added before the workshop.
+After your portfolio works, [submit your live Pages URL and GitHub username](https://github.com/ssuish/msc-developer-workspace/issues/new?template=showcase.yml). Sign in to GitHub and check the public showcase consent box. A GitHub Action checks that your account, username, and Pages URL match, then adds your link automatically. See the [showcase guide](showcase/README.md).
 
 ## Resources
 
