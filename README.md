@@ -2,6 +2,13 @@
 
 Build and publish a small developer portfolio while learning how the terminal, editor, Git, GitHub, and deployment fit together. You can finish this project without attending the talk.
 
+## Workshop links
+
+- [Presentation](https://msc-developer-workspace.quidor-adrean.chatgpt.site/#screen-1)
+- [Showcase directory](https://msc-developer-workspace.quidor-adrean.chatgpt.site/showcase)
+- [Live starter example](https://ssuish.github.io/msc-developer-workspace/)
+- [Speaker notes](presenter/speaker-notes.md), [dry-run guide](presenter/dry-run-guide.md), and [organizer handoff](presenter/organizer-handoff.md)
+
 ## What you will build
 
 A one-page portfolio with a hero, about section, three projects, and contact links. Edit [starter/](starter/). Compare with [finished/](finished/) if you need an example. GitHub Pages publishes only starter/.

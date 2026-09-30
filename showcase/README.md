@@ -1,4 +1,4 @@
-# MSC Developer Showcase
+# AJQ Developer Showcase
 
 After your portfolio is live, [open the showcase submission form](https://msc-developer-workspace.quidor-adrean.chatgpt.site/showcase?submit=1).
 
