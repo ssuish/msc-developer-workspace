@@ -7,7 +7,6 @@ Build and publish a small developer portfolio while learning how the terminal, e
 - [Presentation](https://msc-developer-workspace.quidor-adrean.chatgpt.site/#screen-1)
 - [Showcase directory](https://msc-developer-workspace.quidor-adrean.chatgpt.site/showcase)
 - [Live starter example](https://ssuish.github.io/msc-developer-workspace/)
-- [Speaker notes](presenter/speaker-notes.md), [dry-run guide](presenter/dry-run-guide.md), and [organizer handoff](presenter/organizer-handoff.md)
 
 ## What you will build
 
