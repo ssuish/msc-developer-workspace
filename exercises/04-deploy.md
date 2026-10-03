@@ -1,22 +1,29 @@
-# 04 — Deploy with GitHub Pages
+# 04 — Publish with GitHub Actions and Pages
 
-This repository contains a GitHub Actions workflow that uploads only starter/. You do not need to write workflow YAML.
+Take-home follow-up to the short deployment recap. Actions runs publishing instructions; Pages hosts the static page. No workflow/YAML edits needed. Start with a public fork and [pushed portfolio commit](03-git.md).
 
-1. Open your public fork on GitHub.
-2. Open Actions and enable workflows for the fork if prompted.
-3. Open Settings → Pages and choose GitHub Actions under Build and deployment.
-4. Push a change to main, or select Actions → Deploy portfolio → Run workflow.
-5. Wait for a successful workflow run. Open the public URL under Settings → Pages.
-6. Check the hero, projects, contact links, and mobile layout on the deployed URL.
+## Enable once
 
-A normal project site URL is https://YOUR_USERNAME.github.io/msc-developer-workspace/.
+1. Open your fork → Actions. Enable workflows if prompted.
+2. Settings → Pages → Build and deployment → choose GitHub Actions.
 
-## If it does not work
+## Run and check
 
-- No workflow run: confirm Actions are enabled in your fork, and use Run workflow.
-- A failed run: open its logs in Actions. Check that Settings → Pages uses GitHub Actions and your branch is main.
-- A 404: wait a few minutes, then use the exact URL shown in Settings → Pages.
-- Old content: confirm you edited starter/, committed, pushed to main, and opened the latest deployment.
-- Missing styles: confirm starter/index.html links to styles.css and both files are in starter/.
+3. Push a starter/ change on main, or Actions → Deploy portfolio → Run workflow → main. Documentation-only pushes do not trigger this path-filtered workflow.
+4. Wait for successful completion; queued/running is not finished.
+5. Open exact Pages URL in Settings/run output. Usually `https://YOUR_USERNAME.github.io/msc-developer-workspace/`; renamed repo changes path.
+6. Test private browser window/phone width. Repo URL github.com/... shows source, not live portfolio.
 
-Checkpoint: you can open your public portfolio URL in a private browser window.
+Only starter/ uploads. Editing finished/ does not change live page.
+
+| Problem | Check |
+| --- | --- |
+| No run | Actions enabled, main branch, starter/ change or manual run |
+| Failed run | Failed-step logs; Pages source/account/repo access |
+| 404 | Wait until deployment finished; use exact URL |
+| Old content | Saved starter/ file, commit, push, successful deployment, refresh |
+| Missing CSS | styles.css beside HTML; href="styles.css" intact |
+
+**Checkpoint:** another person can open your public URL. [Submit to showcase](../showcase/README.md).
+
+[Official Pages settings](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)

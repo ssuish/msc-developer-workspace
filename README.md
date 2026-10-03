@@ -1,77 +1,95 @@
 # The Developer Workspace
 
-Build and publish a small developer portfolio while learning how the terminal, editor, Git, GitHub, and deployment fit together. You can finish this project without attending the talk.
+New to the terminal, VS Code, Git or GitHub? Start here. Build a small portfolio while learning how your files, editor and version history work together.
 
 ## Workshop links
 
 - [Presentation](https://msc-developer-workspace.quidor-adrean.chatgpt.site/#screen-1)
-- [Showcase directory](https://msc-developer-workspace.quidor-adrean.chatgpt.site/showcase)
 - [Live starter example](https://ssuish.github.io/msc-developer-workspace/)
+- [Showcase directory](https://msc-developer-workspace.quidor-adrean.chatgpt.site/showcase)
 
-## What you will build
+## What you need
 
-A one-page portfolio with a hero, about section, three projects, and contact links. Edit [starter/](starter/). Compare with [finished/](finished/) if you need an example. GitHub Pages publishes only starter/.
+A computer, internet and a browser. The full exercise uses **VS Code**, **Git** and a **GitHub account**; [first-time setup](guides/first-time-setup.md) explains how to get them. Windows attendees use **Ubuntu in WSL** as the recommended workshop workspace; native Windows is a fallback. macOS/Linux users use their own terminal. Codex, containers, Node.js, package managers, paid accounts and API keys are not required.
 
-## Prerequisites
+Cannot install today? Use [browser-only preview](guides/first-time-setup.md#browser-only-preview) and return to setup later. Follow the talk without rushing an installation or restart.
 
-VS Code, Git, a GitHub account, and a browser. Codex, WSL, containers, and other extensions are optional. No package manager, API key, database, or AI tool is required.
+## The tools in one minute
 
-## Quick Start
+| Tool | Job |
+| --- | --- |
+| Terminal | A window where you type commands |
+| VS Code | An editor for reading/changing project files |
+| WSL (optional) | A Linux environment inside Windows |
+| Git | Records checkpoints of files on your computer |
+| GitHub | Hosts repositories online; separate from Git |
+| Actions / Pages | Run publishing instructions / host your portfolio |
 
-1. Fork this repository to your personal account. Keep your fork public.
-2. Copy your fork's HTTPS URL from **Code**.
-3. In a terminal, run: git clone YOUR_FORK_URL
-4. Run: cd msc-developer-workspace
-5. Run: code .
-6. Open starter/index.html in a browser. Edit starter/index.html and starter/styles.css, then refresh.
+[Beginner glossary](guides/glossary.md): repository, fork, clone, branch, stage, commit, push and pull.
 
-If the code command is unavailable, use **File → Open Folder** in VS Code.
+## Your learning path
 
-## Workshop Flow
-
-| Stage | Action | Guide |
+| Step | Guide | Ready when… |
 | --- | --- | --- |
-| Navigate | Open the project | [Terminal exercise](exercises/01-terminal.md) |
-| Build | Personalize the page | [Customize exercise](exercises/02-customize.md) |
-| Review | Open the page and inspect changes | [Git exercise](exercises/03-git.md) |
-| Version | Commit and push | [Git exercise](exercises/03-git.md) |
-| Deploy | Enable Pages and open your site | [Deploy exercise](exercises/04-deploy.md) |
+| 0. Install/sign up | [First-time setup](guides/first-time-setup.md) | Account, editor and Git are ready |
+| 1. Enter WSL (Windows) | [WSL workspace](guides/wsl.md) | Ubuntu opens; Git works; Linux project folder exists |
+| 2. Navigate terminal | [Terminal exercise](exercises/01-terminal.md) | You can identify current folder and environment |
+| 3. GitHub fork/clone | [Fork, clone and sign in](guides/github-first-repository.md) | Your local copy points to your own fork |
+| 4. Understand Git | [Git exercise](exercises/03-git.md) | You understand status, stage, commit and push |
+| 5. Develop in VS Code | [Editor walkthrough](guides/vscode-basics.md) + [customize](exercises/02-customize.md) | Save/preview changes, use Source Control to record them |
+| 6. Publish later | [Actions/Pages](exercises/04-deploy.md) | Public URL shows the portfolio |
 
-## Customize Your Portfolio
+Workshop route: **WSL → terminal → GitHub fork/clone/exploration → Git → VS Code → GitHub Actions/Pages**. Source Control is a UI for Git; use CLI for explicit/deeper inspection. Actions/Pages is a short recap; follow its guide afterward at your own pace.
 
-Replace the sample name, role, story, three projects, email address, and GitHub link in starter/index.html. Change colors and spacing in starter/styles.css. Open the actual page and check it on a narrow browser window. The finished version is a reference, not a dependency.
+## Already set up? Quick start
 
-## Git Workflow
+1. On [this repository](https://github.com/ssuish/msc-developer-workspace), choose **Fork** and create a public fork under your account.
+2. On **your fork**, choose **Code → HTTPS** and copy its URL.
+3. Replace `YOUR_USERNAME` below. Run one line at a time; do not copy a `$` prompt.
 
-Run these commands after a useful change:
+```sh
+git clone https://github.com/YOUR_USERNAME/msc-developer-workspace.git
+cd msc-developer-workspace
+code .
+```
 
-    git status
-    git diff
-    git add starter/
-    git commit -m "Customize portfolio"
-    git push
+Renamed your fork? Use its copied URL and actual folder name. If `code .` fails, use VS Code → **File → Open Folder**.
 
-Status lists changes; diff shows their content; add chooses files; commit records a checkpoint; push sends it to GitHub. See the [Git cheatsheet](cheatsheets/git.md).
+4. Open `starter/index.html` in your browser; edit it and `starter/styles.css` in VS Code. Save, then refresh.
+5. Review and record the change:
 
-## Deploy With GitHub Pages
+```sh
+git status
+git diff
+git add starter/
+git diff --staged
+git commit -m "Customize portfolio"
+git push
+```
 
-Your fork includes a workflow that publishes only starter/ on pushes to main.
+First commit/push? Follow [identity setup](guides/first-time-setup.md#tell-git-who-created-the-commit) and [GitHub sign-in](guides/github-first-repository.md#sign-in-for-your-first-push). Saving, committing and pushing are different actions.
 
-1. In your fork, open **Actions** and enable workflows when prompted. Forked workflows do not run until enabled.
-2. Open **Settings → Pages**. Under **Build and deployment**, choose **GitHub Actions** as the source.
-3. Push a change to main, or use **Actions → Deploy portfolio → Run workflow**.
-4. Wait for a successful run. Open the URL shown under **Settings → Pages**. It will usually be https://YOUR_USERNAME.github.io/msc-developer-workspace/.
+## Project map
 
-If the page is missing or old, follow [deployment troubleshooting](exercises/04-deploy.md). GitHub's [Pages source guide](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) explains the settings.
+- `starter/index.html` — your portfolio content.
+- `starter/styles.css` — colors, spacing and layout.
+- `finished/` — finished reference; starter does not depend on it.
+- `guides/`, `exercises/`, `cheatsheets/` — learning materials.
+- `prompts/` — optional AI prompts.
+- `.github/workflows/deploy-portfolio.yml` — publishing instructions; no YAML editing needed.
 
-## Using AI
+**Edit `starter/`. Only `starter/` is published by Pages.** Presenter files and speaker demo work are kept separately.
 
-AI is optional. If you use it, start with [explore](prompts/explore.md), then [plan](prompts/plan.md), [build](prompts/build.md), [debug](prompts/debug.md), or [review](prompts/review.md). Inspect the files, open the page, and decide what to keep before committing.
+## Publish and share
 
-## Submit to Showcase
+In your public fork: enable **Actions**, then **Settings → Pages → GitHub Actions**. Push a `starter/` change or manually run **Deploy portfolio**. [Full deployment guide](exercises/04-deploy.md).
 
-After your portfolio works, [submit it in the Developer Showcase](https://msc-developer-workspace.quidor-adrean.chatgpt.site/showcase?submit=1). Enter your GitHub username and live GitHub Pages URL, then agree to show them publicly. Your portfolio appears automatically after the form checks the link. See the [showcase guide](showcase/README.md).
+Check the live page, then [submit inside the Site](https://msc-developer-workspace.quidor-adrean.chatgpt.site/showcase?submit=1): GitHub username, matching live Pages URL and public consent. [Showcase guide](showcase/README.md).
 
-## Resources
+## Quick reference and help
 
-See [resources.md](resources.md) for first-party documentation.
+[Terminal](cheatsheets/terminal.md) · [VS Code](cheatsheets/vscode.md) · [Git](cheatsheets/git.md) · [GitHub](cheatsheets/github.md) · [WSL](cheatsheets/wsl.md)
+
+[Common problems](guides/troubleshooting.md) · [Glossary](guides/glossary.md) · [Official resources](resources.md)
+
+AI is optional: [explore](prompts/explore.md), [plan](prompts/plan.md), then [build](prompts/build.md). Inspect files and browser output before keeping a change.

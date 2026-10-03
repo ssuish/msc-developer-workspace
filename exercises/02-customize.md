@@ -1,9 +1,17 @@
-# 02 — Customize your portfolio
+# 02 — Develop manually in VS Code
 
-Open starter/index.html. Replace Alex Rivera, the short role statement, about text, three project descriptions, and contact details with your own information. Only claim work you have actually done. If a project is still planned, label it as planned.
+[Editor/Source Control walkthrough](../guides/vscode-basics.md)
 
-Open starter/styles.css and try a different background or link color. Keep text readable. Resize the browser to a narrow width and confirm the three project cards stack.
+HTML = content/structure; CSS = appearance. Edit starter/; finished/ is independent reference.
 
-Open starter/index.html in a browser. Test the navigation links and your email/GitHub links. Sample links are placeholders and must be replaced before you share your portfolio.
+1. In starter/index.html find Alex Rivera; replace sample name in title/hero/footer, role and about story. Keep tags/quoted attributes intact.
+2. Replace sample projects with actual work; label planned ideas honestly.
+3. Replace github.com/ with your profile, and hello@example.com with an email you want public.
+4. Save, then refresh the same HTML file in your browser.
+5. In starter/styles.css find `a { color: #075da8; }`; try `#2448c8`, save/refresh. Adjust existing .hero padding if desired.
+6. Check navigation, profile/email links and phone-width layout. Tab through links; keep visible focus styles.
+7. Inspect diff in Source Control. Use [Git UI/CLI exercise](03-git.md) to record it.
 
-Checkpoint: someone opening your page can tell who you are, what you have built, and how to contact you.
+Work in small changes. Saved files are not commits; pushed commits are not necessarily deployed yet.
+
+**Checkpoint:** page identifies you and your work; links/layout work.

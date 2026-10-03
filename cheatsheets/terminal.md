@@ -1,11 +1,22 @@
 # Terminal cheatsheet
 
-| Command | Meaning |
-| --- | --- |
-| pwd | Show current folder |
-| ls | List files and folders |
-| cd NAME | Enter a folder |
-| cd .. | Go to the parent folder |
-| code . | Open the current folder in VS Code |
+Run one line at a time; copy the command, not a `$` prompt. Replace uppercase placeholders. Commands depend on the shell.
 
-These examples use a Linux or WSL shell. On Windows PowerShell, Get-Location and Get-ChildItem are alternatives to pwd and ls.
+| Task | Bash: Ubuntu / macOS / Linux / Git Bash | PowerShell fallback |
+| --- | --- | --- |
+| Current folder | `pwd` | `Get-Location` or `pwd` |
+| List items | `ls` | `Get-ChildItem` or `ls` |
+| Enter folder | `cd msc-developer-workspace` | `cd msc-developer-workspace` |
+| Parent folder | `cd ..` | `cd ..` |
+| Home | `cd ~` | `Set-Location $HOME` |
+| Spaces in path | `cd "My Projects"` | `cd "My Projects"` |
+| Create project parent | `mkdir -p ~/projects` | `New-Item -ItemType Directory -Path "$HOME\projects" -Force` |
+| Open editor here | `code .` | `code .` |
+| Git installed? | `git --version` | `git --version` |
+| Cancel input/command | Ctrl+C | Ctrl+C |
+
+`.` = current folder; `..` = parent. Relative paths start here; full paths include the root, e.g. `/home/you/...` or `C:\Users\you\...`. Ubuntu `~` is Linux home; `/mnt/c` accesses Windows C:.
+
+Git commands are the same across these shells; navigation/install commands may differ. Show folder/list items before commands that change work.
+
+[Exercise](../exercises/01-terminal.md) · [Troubleshooting](../guides/troubleshooting.md)
