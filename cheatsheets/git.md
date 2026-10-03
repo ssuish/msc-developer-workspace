@@ -27,7 +27,7 @@ git config --global user.name "Your Name"
 git config --global user.email "YOUR_GITHUB_EMAIL"
 ```
 
-Identity does not authenticate push. [Setup](../guides/first-time-setup.md) · [Authentication](../guides/github-first-repository.md#sign-in-for-your-first-push)
+Identity does not authenticate push. [README](../README.md) · [Push sign-in](../guides/repeat-the-demo.md#push-sign-in)
 
 ## Record a useful change
 
@@ -44,4 +44,4 @@ git push
 
 Do not run `git init` inside a clone. Do not confuse unstage with discard. Inspect unfamiliar branch/conflict problems before reset or force-push.
 
-[UI/CLI exercise](../exercises/03-git.md)
+[Follow the demo](../README.md#4-review-commit-and-push)

@@ -20,4 +20,4 @@ Custom bindings/layouts differ; menus are fallback. Search Palette for word wrap
 
 CLI is useful for remote/history inspection and more explicit operations. It is not a separate history system.
 
-[Walkthrough](../guides/vscode-basics.md)
+[Follow the demo](../README.md#3-make-it-your-portfolio)

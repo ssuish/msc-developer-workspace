@@ -16,6 +16,6 @@
 
 Repo URL shows source/history; Pages URL shows portfolio. Fork stays online; clone lives locally. No pull request is required for your own main-branch portfolio.
 
-Push authentication differs from Git name/email. Use browser credential-helper sign-in or [first-push instructions](../guides/github-first-repository.md#sign-in-for-your-first-push).
+Push authentication differs from Git name/email. Use browser credential-helper sign-in or [push sign-in](../guides/repeat-the-demo.md#push-sign-in).
 
-[Walkthrough](../guides/github-first-repository.md) · [Deploy](../exercises/04-deploy.md)
+[Follow the demo](../README.md) · [Publish](../README.md#5-publish-with-actions-and-pages)

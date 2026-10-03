@@ -15,4 +15,4 @@
 
 Linux CLI tooling + Windows editor is the benefit demonstrated. Native Windows is fallback if installation is blocked; macOS/Linux do not need WSL. Install/restart before the talk.
 
-[WSL setup](../guides/wsl.md) · [Terminal](terminal.md)
+[Workspace setup](../README.md#1-prepare-your-workspace) · [Terminal](terminal.md)

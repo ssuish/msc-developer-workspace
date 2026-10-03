@@ -19,4 +19,4 @@ Run one line at a time; copy the command, not a `$` prompt. Replace uppercase pl
 
 Git commands are the same across these shells; navigation/install commands may differ. Show folder/list items before commands that change work.
 
-[Exercise](../exercises/01-terminal.md) · [Troubleshooting](../guides/troubleshooting.md)
+[Follow the demo](../README.md) · [Help](../guides/repeat-the-demo.md)
