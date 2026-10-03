@@ -1,5 +1,7 @@
 # Official learning resources
 
+Start with [Repeat the demo](guides/repeat-the-demo.md), then use the official references below for deeper learning.
+
 Follow [learning path](README.md#your-learning-path) first. These are references, not required reading before starting.
 
 ## WSL → terminal

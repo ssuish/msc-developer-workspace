@@ -2,6 +2,10 @@
 
 New to the terminal, VS Code, Git or GitHub? Start here. Build a small portfolio while learning how your files, editor and version history work together.
 
+## Start here: repeat the live demo
+
+**[Turn this starter into my personal portfolio](guides/repeat-the-demo.md)** — one guided route through setup, fork/clone, editing, review, commit/push and publishing. It links to the detailed guides when you need them.
+
 ## Workshop links
 
 - [Presentation](https://msc-developer-workspace.quidor-adrean.chatgpt.site/#screen-1)
@@ -20,7 +24,7 @@ Cannot install today? Use [browser-only preview](guides/first-time-setup.md#brow
 | --- | --- |
 | Terminal | A window where you type commands |
 | VS Code | An editor for reading/changing project files |
-| WSL (optional) | A Linux environment inside Windows |
+| WSL (Windows path) | A Linux environment inside Windows |
 | Git | Records checkpoints of files on your computer |
 | GitHub | Hosts repositories online; separate from Git |
 | Actions / Pages | Run publishing instructions / host your portfolio |
@@ -29,17 +33,19 @@ Cannot install today? Use [browser-only preview](guides/first-time-setup.md#brow
 
 ## Your learning path
 
+Follow [Repeat the demo](guides/repeat-the-demo.md) first; use these references when a step needs more detail.
+
 | Step | Guide | Ready when… |
 | --- | --- | --- |
 | 0. Install/sign up | [First-time setup](guides/first-time-setup.md) | Account, editor and Git are ready |
 | 1. Enter WSL (Windows) | [WSL workspace](guides/wsl.md) | Ubuntu opens; Git works; Linux project folder exists |
-| 2. Navigate terminal | [Terminal exercise](exercises/01-terminal.md) | You can identify current folder and environment |
-| 3. GitHub fork/clone | [Fork, clone and sign in](guides/github-first-repository.md) | Your local copy points to your own fork |
-| 4. Understand Git | [Git exercise](exercises/03-git.md) | You understand status, stage, commit and push |
-| 5. Develop in VS Code | [Editor walkthrough](guides/vscode-basics.md) + [customize](exercises/02-customize.md) | Save/preview changes, use Source Control to record them |
-| 6. Publish later | [Actions/Pages](exercises/04-deploy.md) | Public URL shows the portfolio |
+| 2. Navigate terminal | [Terminal exercise](exercises/01-terminal.md) | You know current folder and environment |
+| 3. Fork/clone and explore | [GitHub guide](guides/github-first-repository.md) | Your checkout points to your fork |
+| 4. Edit and preview | [VS Code walkthrough](guides/vscode-basics.md) + [customize](exercises/02-customize.md) | Your own introduction/project card appears locally |
+| 5. Review and record | [Git exercise](exercises/03-git.md) | You review, stage, commit and push the same change |
+| 6. Publish | [Actions/Pages](exercises/04-deploy.md) | Your public URL shows the intended version |
 
-Workshop route: **WSL → terminal → GitHub fork/clone/exploration → Git → VS Code → GitHub Actions/Pages**. Source Control is a UI for Git; use CLI for explicit/deeper inspection. Actions/Pages is a short recap; follow its guide afterward at your own pace.
+Workshop story: **WSL → terminal → GitHub fork/clone/exploration → VS Code edit/preview → Git review/commit/push → Actions/Pages**. Source Control is a UI for Git; CLI provides explicit inspection. Actions/Pages remains a short recap to repeat afterward.
 
 ## Already set up? Quick start
 
